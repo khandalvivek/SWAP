@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="demo1"></h2>
+    <h2 id="demo2"></h2>
+    <h2 id="demo3"></h2>
+    <h2 id="demo4"></h2>
+
+
+    <script>
+        var a = prompt('Enter the value of a:');
+        var b = prompt('Enter the value of b:');
+        var temp;
+
+        function swap() {
+
+            document.getElementById('demo1').innerHTML= `Value of a = ${a}`
+            document.getElementById('demo2').innerHTML= `Value of b = ${b}`
+            temp = a;
+            a = b;
+            b = temp;
+
+            document.getElementById('demo3').innerHTML= `After swap value of a = ${a}`
+            document.getElementById('demo4').innerHTML= `After swap value of b = ${b}`
+        }
+        swap();
+
+
+    </script>
+</body>
+
+</html>
